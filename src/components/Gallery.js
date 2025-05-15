@@ -1,5 +1,7 @@
 function Gallery(props) {
     return (
+        <>
+        <h3 className="center flex">My Four Cats!</h3>
         <div className="gallery flex">
             {props.list.map(kitty => (
                 <div key={kitty.id} className="gallery-item">
@@ -10,6 +12,7 @@ function Gallery(props) {
                 </div>
             ))}
         </div>
+        </>
     );
 }
 

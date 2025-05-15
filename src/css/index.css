@@ -1,5 +1,9 @@
 @charset "utf-8";
 
+/* - - - - - - - - - - - - - - - - - - - - - - - */
+/*                 Main Stylings                 */
+/* - - - - - - - - - - - - - - - - - - - - - - - */
+
 * {
     margin: 0;
     padding: 0;
@@ -14,36 +18,53 @@ body {
 .flex {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+}
+
+.column {
+    flex-direction: column;
 }
 
 .container {
     width: min(100% - 30px, 1080px);
     margin-inline: auto;
-    padding: 0 20px;
 }
 
+.gap-40 {
+    gap: 40px;
+}
+
+.center {
+    justify-content: center;
+}
+/* - - - - - - - - - - - - - - - - - - - - - - - */
+/*                    Header                     */
+/* - - - - - - - - - - - - - - - - - - - - - - - */
 
 header {
-    background-color: #f8f9fa;
     padding: 20px 0;
+    color: #FEFEFE;
 }
 
 header h1 {
-    font-size: 2rem;
+    font-size: 3rem;
+    font-family: "Borel", cursive;
+    width: 750px;
 }
 
 nav a {
     text-decoration: none;
-    color: #007bff;
     margin-right: 15px;
+    color: #FEFEFE;
 }
 
 nav a:hover {
     text-decoration: underline;
 }
 
-/* Banner */
+/* - - - - - - - - - - - - - - - - - - - - - - - */
+/*                    Banner                     */
+/* - - - - - - - - - - - - - - - - - - - - - - - */
+
 .hero-image {
         background-color: #ae78d9;
         background-image: url("../media/banner.png");
@@ -52,20 +73,34 @@ nav a:hover {
         position: relative;
   }
 
+.right {
+    margin: 180px 0 0 800px;
+}
+
 .hero-image h2 {
-    font-size: 2.5rem;
+    font-size: 5rem;
     font-family: "Borel", cursive;
-    margin-bottom: 10px;
 }
 
 .hero-image p {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
+    font-size: 1.8rem;
+    margin-left: 40px;
 }
 
+
+/* - - - - - - - - - - - - - - - - - - - - - - - */
+/*                    Buttons                    */
+/* - - - - - - - - - - - - - - - - - - - - - - - */
+
+.buttons {
+    gap: 20px;
+    display: flex;
+    margin-top: 20px;
+    margin-left: 80px;
+}
 .button-main {
-    background-color: #007bff; 
-    color: white;
+    background-color: #B06FAD;
+    color: #FEFEFE;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -74,23 +109,35 @@ nav a:hover {
 }
 
 .button-main:hover {
-    background-color: #0056b3; 
+    background-color: #B06FAD;
+    
 }
 
 .button-secondary {
-    background-color: transparent;
-    color: #007bff;
+    background-color: #FEFEFE;
+    color:#B06FAD;
     padding: 10px 20px;
-    border: 2px solid #007bff;
+    border: 2px solid #B06FAD;
     border-radius: 5px;
     cursor: pointer;
+    margin-right: 700px;
 }
 
 .button-secondary:hover {
-    background-color: #f8f9fa; 
+    background-color: #B06FAD;
+    color: #FEFEFE;
 }
 
 
+/* - - - - - - - - - - - - - - - - - - - - - - - */
+/*                    Gallery                    */
+/* - - - - - - - - - - - - - - - - - - - - - - - */
+
+h3 {
+    font-family: "Borel", cursive;
+    font-size: 3rem;
+    margin-top: 30px;
+}
 .gallery {
     display: flex;
     flex-wrap: wrap;
@@ -104,6 +151,11 @@ nav a:hover {
     text-align: center;
 }
 
+.kitty-poster:hover {
+  scale: 1.05;
+  transform: translateY(-4px);
+}
+
 .kitty-poster {
     max-width: 100%;
     height: auto;
@@ -114,18 +166,27 @@ nav a:hover {
     margin-bottom: 10px;
 }
 
+/* - - - - - - - - - - - - - - - - - - - - - - - */
+/*                    Footer                     */
+/* - - - - - - - - - - - - - - - - - - - - - - - */
+
 footer {
-    background-color: #f8f9fa;
-    padding: 20px 0;
+    background-color: #bb83b9;
+    padding: 20px;
     margin-top: 20px;
+    
+    h1 {
+        font-size: 2rem;
+        padding-top: 16px;
+        font-family: "Borel", cursive;
+    }
+    nav {
+        padding-top: 12px;
+    }
 }
-
-footer h1 {
-    font-size: 1.5rem;
-}
-
 .copyright {
-    font-size: 0.9rem;
-    color: #6c757d;
+    font-size: 1.5rem;
+    padding-top: 12px;
+    color: #FEFEFE;
 }
 

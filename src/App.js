@@ -3,7 +3,7 @@ import Footer from './components/Footer';
 import Banner from './components/Banner';
 import Gallery from './components/Gallery';
 
-import charlieImg from './media/charlie.jpg';
+import charlieImg from './media/charlie.JPG';
 import rubyImg from './media/ruby.jpg';
 import bagelImg from './media/bagel.jpg';
 import ceceImg from './media/cece.jpg';
@@ -22,30 +22,31 @@ function App() {
     {
       id: 1001,
       title: 'Charlie',
-      poster: 'charlieImg'
+      poster: charlieImg
     },
     {
       id: 1002,
       title: 'Ruby',
-      poster: 'rubyImg'
+      poster: rubyImg
     },
     {
       id: 1003,
       title: 'Bagel',
-      poster: 'bagelImg'
+      poster: bagelImg
     },
     {
       id: 1004,
       title: 'Cream Cheese',
-      poster: 'ceceImg'
+      poster: ceceImg
     }
   ]
-      return (
-    <>
-      <Header title={title} navLinks={navLinks} />
+return (
+    <> 
       <main>
-        <Banner></Banner>
-        <div className='container'>
+        <Banner>
+          <Header title={title} navLinks={navLinks} />
+        </Banner>
+        <div className="container">
           <Gallery list={kitties} />
         </div>
       </main>
