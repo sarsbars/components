@@ -1,16 +1,16 @@
-import Nav from './Nav';
+import Button from './Button';
 
-function Footer(props) {
+function Banner() {
     return (
-        <header>
-            <div className='container flex'>
-                <h1>{props.title}</h1>
-                <Nav list={props.navLinks} />
-                <p className='copyright'>@  Copyrights Reserved</p>
-            </div>        
-        </header>
-    )
+        <div className="hero-image">
+            <div className="container flex">
+                <h2>My four cats</h2>
+                <p>Charlie, Ruby, Bagel and Cece</p>
+                <Button variant="main">Join the Club</Button>
+                <Button variant="secondary">Learn More</Button>
+            </div>
+        </div>
+    );
 }
 
-export default Footer;
-
+export default Banner;

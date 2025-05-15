@@ -1,4 +1,4 @@
-import Button from './Button';
+
 import Nav from './Nav';
 
 function Header(props) {
@@ -7,8 +7,6 @@ function Header(props) {
             <div className='container flex'>
                 <h1>{props.title}</h1>
                 <Nav list={props.navLinks} />
-                <Button isLoggedIn={props.isLoggedIn}></Button>
-
             </div>        
         </header>
     )

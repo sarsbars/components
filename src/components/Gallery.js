@@ -1,17 +1,16 @@
 function Gallery(props) {
     return (
-        <div className='movie-list flex'>
-          {props.list.map(movie => (
-              <div key={movie.id}>
-                <div className='poster-img'>
-                    <img src={movie.poster} className='movie-poster' />
+        <div className="gallery flex">
+            {props.list.map(kitty => (
+                <div key={kitty.id} className="gallery-item">
+                    <div className="poster-img">
+                        <img src={kitty.poster} className="kitty-poster" alt={kitty.title} />
+                    </div>
+                    <p>{kitty.title}</p>
                 </div>
-                <p>{movie.title}</p>
-              </div>
-          ))}
+            ))}
         </div>
-      );
-    }
-    
+    );
+}
 
 export default Gallery;
